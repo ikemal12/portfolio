@@ -29,6 +29,30 @@ const projects = [
     github: 'https://github.com/ikemal12/autoencoder',
     link: null,
   },
+  {
+    title: 'Encode AI Hack 2025',
+    desc: 'Smart AI assistant for personalised money tips, debt fixes, and investment plans.',
+    tech: ['Python', 'Portia AI SDK', 'OpenAI API'],
+    img: '/previews/smartassistant.png',
+    github: 'https://github.com/ikemal12/encode-ai-hack-2025',
+    link: null,
+  },
+  {
+    title: 'CHIP-8',
+    desc: 'Emulator for the CHIP-8 virtual machine, supporting 35+ games.',
+    tech: ['C++', 'SDL2'],
+    img: '/previews/emulator.png',
+    github: 'https://github.com/ikemal12/CHIP-8',
+    link: null,
+  },
+  {
+    title: 'UberLand Go',
+    desc: 'Transport routing webapp developed as part of the Uber Global Hackathon',
+    tech: ['Flask', 'Google Maps', 'Tfl Unified API'],
+    img: '/previews/transport.png',
+    github: 'https://github.com/ikemal12/UberLand-Go',
+    link: null,
+  },
 ];
 
 const fadeIn = {
