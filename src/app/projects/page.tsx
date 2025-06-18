@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
 const projects = [
@@ -74,12 +75,12 @@ export default function Projects() {
         variants={fadeIn}
         custom={0}
         >
-        <a
+        <Link
             href="/"
             className="absolute left-0 text-sm font-medium text-blue-400 hover:text-white hover:scale-105 transition-transform duration-200"
         >
             ← Back to Home
-        </a>
+        </Link>
         <h1 className="text-4xl font-bold text-white">Project Gallery</h1>
         </motion.div>
 
