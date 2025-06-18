@@ -32,7 +32,7 @@ export default function Home() {
         </p>
       </motion.section>
 
-      {/* What I'm Working On */}
+      {/* Currently Working On */}
       <motion.section
         className="mb-16"
         initial="hidden"
@@ -53,7 +53,7 @@ export default function Home() {
             title: 'MarketPulse',
             desc: 'Developing a bot that sends popular trading signals and insights directly into Discord.',
             link: 'https://github.com/ikemal12/marketpulse',
-            icon: '/icons/marketpulse.png',
+            icon: '/icons/discord.png',
           }].map((project, i) => (
             <motion.div
               key={i}
@@ -70,6 +70,20 @@ export default function Home() {
               <p className="mt-2 text-sm text-gray-400">{project.desc}</p>
             </motion.div>
           ))}
+          <motion.div
+            className="pt-4 text-right"
+            initial="hidden"
+            animate="visible"
+            variants={fadeIn}
+            custom={2}
+          >
+            <a
+              href="/projects"
+              className="inline-block font-medium text-blue-400 hover:text-white hover:scale-105 transition-transform duration-200"
+            >
+              View all projects →
+            </a>
+          </motion.div>
         </div>
       </motion.section>
 
@@ -79,7 +93,7 @@ export default function Home() {
         initial="hidden"
         animate="visible"
         variants={fadeIn}
-        custom={2}
+        custom={3}
       >
         <h2 className="text-xl font-semibold text-gray-200 mb-6 uppercase tracking-wide">
           Experience
@@ -119,7 +133,7 @@ export default function Home() {
         initial="hidden"
         animate="visible"
         variants={fadeIn}
-        custom={3}
+        custom={4}
       >
         <h2 className="text-xl font-semibold text-gray-200 mb-6 uppercase tracking-wide">
           Get in Touch
