@@ -33,7 +33,7 @@ const projects = [
     title: 'Encode AI Hack 2025',
     desc: 'Smart AI assistant for personalised money tips, debt fixes, and investment plans.',
     tech: ['Python', 'Portia AI SDK', 'OpenAI API'],
-    img: '/previews/smartassistant.png',
+    img: '/previews/financial-assistant.png',
     github: 'https://github.com/ikemal12/encode-ai-hack-2025',
     link: null,
   },
