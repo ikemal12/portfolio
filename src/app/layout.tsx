@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ilter Kemal",
   description: "Personal portfolio site of Ilter Kemal",
+  keywords: ['Ilter Kemal', 'Portfolio', 'Software Engineer', 'Machine Learning'],
+  authors: [{ name: 'Ilter Kemal' }],
+  creator: 'Ilter Kemal',
 };
 
 export default function RootLayout({
