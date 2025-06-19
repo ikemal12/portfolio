@@ -19,6 +19,23 @@ export const metadata: Metadata = {
   keywords: ['Ilter Kemal', 'Portfolio', 'Software Engineer', 'Machine Learning'],
   authors: [{ name: 'Ilter Kemal' }],
   creator: 'Ilter Kemal',
+
+  openGraph: {
+    title: "Ilter Kemal",
+    description: "My personal portfolio",
+    url: "https://ilter-kemal.vercel.app",
+    siteName: "Ilter Kemal",
+    images: [
+      {
+        url: "https://ilter-kemal.vercel.app/preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Ilter Kemal Portfolio Preview",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
