@@ -15,14 +15,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ilter Kemal",
-  description: "Personal portfolio site of Ilter Kemal",
+  description: "My personal portfolio site",
   keywords: ['Ilter Kemal', 'Portfolio', 'Software Engineer', 'Machine Learning'],
   authors: [{ name: 'Ilter Kemal' }],
   creator: 'Ilter Kemal',
 
   openGraph: {
     title: "Ilter Kemal",
-    description: "My personal portfolio",
+    description: "My personal portfolio site",
     url: "https://ilter-kemal.vercel.app",
     siteName: "Ilter Kemal",
     images: [
