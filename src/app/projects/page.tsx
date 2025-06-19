@@ -85,44 +85,42 @@ export default function Projects() {
         </motion.div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((project, i) => (
-          <motion.div
-            key={i}
-            whileHover={{ y: -5, scale: 1.02 }}
-            className="bg-[#121212] border border-neutral-800 rounded-xl overflow-hidden shadow"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.1 }}
-          >
-            <Image src={project.img} alt={project.title} width={400} height={200} className="w-full h-48 object-cover" />
+        {projects.map((project, i) => {
+          const targetUrl = project.link || project.github;
 
-            <div className="p-4">
-              <h3 className="text-lg font-semibold text-white">{project.title}</h3>
-              <p className="text-sm text-gray-400 mt-1">{project.desc}</p>
-
-              <div className="flex flex-wrap gap-2 text-xs text-gray-500 mt-3">
-                {project.tech.map((tech, j) => (
-                  <span key={j} className="bg-neutral-800 px-2 py-1 rounded">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              <div className="flex space-x-4 mt-4 text-gray-400 text-lg">
-                {project.github && (
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <FiGithub className="hover:text-white" />
-                  </a>
-                )}
-                {project.link && (
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" aria-label="Live Site">
-                    <FiExternalLink className="hover:text-white" />
-                  </a>
-                )}
-              </div>
-            </div>
-          </motion.div>
-        ))}
+          return (
+            <motion.div
+              key={i}
+              whileHover={{ y: -5, scale: 1.02 }}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 }}
+            >
+              <Link href={targetUrl || "#"} target="_blank" rel="noopener noreferrer">
+                <div className="bg-[#121212] border border-neutral-800 rounded-xl overflow-hidden shadow cursor-pointer hover:bg-[#1e1e1e] transition">
+                  <Image
+                    src={project.img}
+                    alt={project.title}
+                    width={400}
+                    height={200}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4">
+                    <h3 className="text-lg font-semibold text-white">{project.title}</h3>
+                    <p className="text-sm text-gray-400 mt-1">{project.desc}</p>
+                    <div className="flex flex-wrap gap-2 text-xs text-gray-500 mt-3">
+                      {project.tech.map((tech, j) => (
+                        <span key={j} className="bg-neutral-800 px-2 py-1 rounded">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </motion.div>
+          );
+        })}
       </div>
     </main>
   );
