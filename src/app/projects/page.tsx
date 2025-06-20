@@ -68,20 +68,22 @@ export default function Projects() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-16 text-gray-300">
       <motion.div
-        className="mb-12 relative text-center"
-        initial="hidden"
-        animate="visible"
-        variants={fadeIn}
-        custom={0}
-        >
-        <Link
-            href="/"
-            className="absolute left-0 text-sm font-medium text-blue-400 hover:text-white hover:scale-105 transition-transform duration-200"
-        >
-            ← Back to Home
-        </Link>
-        <h1 className="text-4xl font-bold text-white">Project Gallery</h1>
-        </motion.div>
+  className="mb-12 flex flex-col sm:flex-row sm:items-center sm:justify-between text-center sm:text-left"
+  initial="hidden"
+  animate="visible"
+  variants={fadeIn}
+  custom={0}
+>
+  <h1 className="text-4xl font-bold text-white">Project Gallery</h1>
+  
+  <Link
+    href="/"
+    className="mt-2 sm:mt-0 text-sm font-medium text-blue-400 hover:text-white hover:scale-105 transition-transform duration-200"
+  >
+    ← Back to Home
+  </Link>
+</motion.div>
+
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, i) => {
