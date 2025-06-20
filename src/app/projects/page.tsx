@@ -75,14 +75,12 @@ export default function Projects() {
         custom={0}
       >
         <h1 className="text-4xl font-bold text-white">Project Gallery</h1>
-        
         <Link
-  href="/"
-  className="inline-block mt-2 rounded px-4 py-2 bg-[#1E293B] text-white text-sm font-medium hover:bg-[#334155] transition-colors duration-200"
->
-  ← Back to Home
-</Link>
-
+          href="/"
+          className="inline-block text-white text-sm font-medium hover:underline hover:text-gray-300 transition-colors duration-200"
+        >
+          ← Back to Home
+        </Link>
       </motion.div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">

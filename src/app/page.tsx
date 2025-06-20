@@ -78,12 +78,11 @@ export default function Home() {
             custom={2}
           >
             <a
-  href="/projects"
-  className="inline-block mt-2 rounded px-4 py-2 bg-[#1E293B] text-white text-sm font-medium hover:bg-[#334155] transition-colors duration-200"
->
-  View all projects →
-</a>
-
+              href="/projects"
+              className="inline-block text-white text-sm font-medium hover:underline hover:text-gray-300 transition-colors duration-200"
+            >
+              View all projects →
+            </a>
           </motion.div>
         </div>
       </motion.section>
@@ -102,7 +101,7 @@ export default function Home() {
         <div className="space-y-6">
           {[{
             title: 'Data Science Intern at Shell',
-            date: 'July — September 2025',
+            date: 'June — September 2025',
             desc: 'Applying data science and ML techniques to real-world energy challenges.',
             icon: '/icons/shell.png',
           }, {
