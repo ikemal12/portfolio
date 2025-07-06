@@ -1,5 +1,4 @@
 'use client';
-
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,7 +6,7 @@ import Link from 'next/link';
 const projects = [
   {
     title: 'Turpan Uyghur Restaurant',
-    desc: 'A responsive, full-stack website with a custom booking system for my family’s restaurant.',
+    desc: 'A responsive, full-stack website with a custom booking system.',
     tech: ['Next.js', 'Tailwind', 'Supabase', 'Vercel'],
     img: '/previews/restaurant.png',
     github: null,
@@ -15,7 +14,7 @@ const projects = [
   },
   {
     title: 'MarketPulse',
-    desc: 'A Discord bot that delivers trading signals using LSTM predictions and technical indicators.',
+    desc: 'A Discord bot that delivers trading signals using LSTM predictions.',
     tech: ['Python', 'Discord.py', 'Pandas', 'Alpaca API'],
     img: '/previews/discord.png',
     github: 'https://github.com/ikemal12/marketpulse',
@@ -31,7 +30,7 @@ const projects = [
   },
   {
     title: 'Encode AI Hack 2025',
-    desc: 'Smart AI assistant for personalised money tips, debt fixes, and investment plans.',
+    desc: 'Smart AI assistant for personalised money tips and investment plans.',
     tech: ['Python', 'Portia AI SDK', 'OpenAI API'],
     img: '/previews/financial-assistant.png',
     github: 'https://github.com/ikemal12/encode-ai-hack-2025',
@@ -47,7 +46,7 @@ const projects = [
   },
   {
     title: 'UberLand Go',
-    desc: 'Transport routing webapp developed as part of the Uber Global Hackathon',
+    desc: 'Multi-modal routing webapp developed as part of the Uber Global Hackathon.',
     tech: ['Flask', 'Google Maps', 'Tfl Unified API'],
     img: '/previews/transport.png',
     github: 'https://github.com/ikemal12/UberLand-Go',

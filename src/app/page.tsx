@@ -1,5 +1,4 @@
 'use client';
-
 import { motion } from 'framer-motion';
 import { FiGithub } from 'react-icons/fi';
 import { FaLinkedin } from 'react-icons/fa';
@@ -18,7 +17,6 @@ const fadeIn = {
 export default function Home() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 text-gray-300">
-      {/* Header */}
       <motion.section
         className="text-center mb-16"
         initial="hidden"
@@ -32,7 +30,6 @@ export default function Home() {
         </p>
       </motion.section>
 
-      {/* Currently Working On */}
       <motion.section
         className="mb-16"
         initial="hidden"
@@ -87,7 +84,6 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* Experience */}
       <motion.section
         className="mb-16"
         initial="hidden"
@@ -127,7 +123,6 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* Contact */}
       <motion.section
         className="text-center"
         initial="hidden"
