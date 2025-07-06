@@ -101,12 +101,12 @@ export default function Home() {
         <div className="space-y-6">
           {[{
             title: 'Data Science Intern at Shell',
-            date: 'June — September 2025',
+            date: 'June 2025 — September 2025',
             desc: 'Applying data science and ML techniques to real-world energy challenges.',
             icon: '/icons/shell.png',
           }, {
             title: 'Front-End Developer for AI Training at Outlier AI',
-            date: 'Jan 2025 — Present',
+            date: 'Jan 2025 — Apr 2025',
             desc: 'Contributing to large language model training by developing clean and responsive UIs.',
             icon: '/icons/outlier.png',
           }].map((exp, i) => (

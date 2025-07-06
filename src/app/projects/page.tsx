@@ -53,6 +53,14 @@ const projects = [
     github: 'https://github.com/ikemal12/UberLand-Go',
     link: null,
   },
+  {
+    title: 'Pathfinding Visualizer',
+    desc: 'Interactive pathfinding algorithm visualizer built with p5.js.',
+    tech: ['JavaScript', 'p5.js'],
+    img: '/previews/pathfinder.png',
+    github: 'https://ikemal12.github.io/pathfinding-visualizer/',
+    link: null,
+  },
 ];
 
 const fadeIn = {
