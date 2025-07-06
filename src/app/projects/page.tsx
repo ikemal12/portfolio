@@ -15,7 +15,7 @@ const projects = [
   {
     title: 'MarketPulse',
     desc: 'A Discord bot that delivers trading signals using LSTM predictions.',
-    tech: ['Python', 'Discord.py', 'Pandas', 'Alpaca API'],
+    tech: ['Pytorch', 'Pandas', 'yFinance'],
     img: '/previews/discord.png',
     github: 'https://github.com/ikemal12/marketpulse',
     link: null,
@@ -31,7 +31,7 @@ const projects = [
   {
     title: 'Encode AI Hack 2025',
     desc: 'Smart AI assistant for personalised money tips and investment plans.',
-    tech: ['Python', 'Portia AI SDK', 'OpenAI API'],
+    tech: ['Python', 'Portia AI SDK'],
     img: '/previews/financial-assistant.png',
     github: 'https://github.com/ikemal12/encode-ai-hack-2025',
     link: null,

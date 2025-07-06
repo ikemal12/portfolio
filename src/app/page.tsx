@@ -26,7 +26,7 @@ export default function Home() {
       >
         <h1 className="text-5xl font-bold text-white mb-3 tracking-tight">Ilter Kemal</h1>
         <p className="text-xl text-gray-400">
-          Aspiring Software Engineer and ML Enthusiast
+          Aspiring Software Engineer
         </p>
       </motion.section>
 
