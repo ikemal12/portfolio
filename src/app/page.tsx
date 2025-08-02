@@ -101,10 +101,10 @@ export default function Home() {
             desc: 'Applying data science and ML techniques to real-world energy challenges.',
             icon: '/icons/shell.png',
           }, {
-            title: 'Front-End Developer for AI Training at Outlier AI',
-            date: 'Jan 2025 — Apr 2025',
-            desc: 'Contributing to large language model training by developing clean and responsive UIs.',
-            icon: '/icons/outlier.png',
+            title: 'Machine Learning Intern at Speechmatics',
+            date: 'Jul 2024 — Sep 2024',
+            desc: 'Contributing to cutting-edge speech recognition technology.',
+            icon: '/icons/speechmatics.png',
           }].map((exp, i) => (
             <motion.div
               key={i}
