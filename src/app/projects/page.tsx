@@ -29,6 +29,14 @@ const projects = [
     link: null,
   },
   {
+    title: 'Stack Trace Analyzer',
+    desc: 'A smart error diagnosis and recommendation engine for Python developers.',
+    tech: ['LangChain', 'FastAPI', 'Ollama', 'Faiss', 'Streamlit'],
+    img: '/previews/stacktrace-analyzer.png',
+    github: 'https://github.com/ikemal12/stacktrace-analyzer',
+    link: null,
+  },
+  {
     title: 'Encode AI Hack 2025',
     desc: 'Smart AI assistant for personalised money tips and investment plans.',
     tech: ['Python', 'Portia AI SDK'],
