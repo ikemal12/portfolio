@@ -43,17 +43,17 @@ export default function Home() {
         <div className="space-y-6">
           {[{
             title: 'NES Emulator',
-            desc: 'Writing an emulator for the Nintendo Entertainment System in Rust and WebAssembly.',
+            desc: 'Writing a high-performance emulator for the Nintendo Entertainment System in Rust.',
             link: 'https://github.com/ikemal12/nes-emu',
             icon: '/icons/nesemu.png',
           }, {
             title: 'Turpan Uyghur Restaurant',
-            desc: 'Building a modern website with a custom booking system for my family’s restaurant.',
+            desc: 'Developing a modern website with a fully custom booking system for my family’s restaurant.',
             link: 'https://turpan.vercel.app',
             icon: '/icons/restaurant.png',
           }, {
             title: 'MarketPulse',
-            desc: 'Developing a bot that sends popular trading signals and insights directly into Discord.',
+            desc: 'Building a deep learning bot that provides trading signals and insights seamlessly on Discord.',
             link: 'https://github.com/ikemal12/marketpulse',
             icon: '/icons/discord.png',
           }].map((project, i) => (

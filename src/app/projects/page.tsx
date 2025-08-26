@@ -5,6 +5,22 @@ import Link from 'next/link';
 
 const projects = [
   {
+    title: 'FastConv',
+    desc: 'CUDA-accelerated CNN inference engine.',
+    tech: ['C++', 'CUDA'],
+    img: '/previews/cuda.jpg',
+    github: null,
+    link: 'https://github.com/ikemal12/fast-conv',
+  },
+  {
+    title: 'NES Emulator',
+    desc: 'High-performance emulator for the Nintendo Entertainment System.',
+    tech: ['Rust', 'WebAssembly'],
+    img: '/previews/nes.png',
+    github: null,
+    link: 'https://github.com/ikemal12/nes-emu',
+  },
+  {
     title: 'Turpan Uyghur Restaurant',
     desc: 'A responsive, full-stack website with a custom booking system.',
     tech: ['Next.js', 'Tailwind', 'Supabase', 'Vercel'],
