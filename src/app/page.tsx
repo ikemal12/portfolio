@@ -47,11 +47,6 @@ export default function Home() {
             link: 'https://github.com/ikemal12/nes-emu',
             icon: '/icons/nesemu.png',
           }, {
-            title: 'Turpan Uyghur Restaurant',
-            desc: 'Developing a modern website with a fully custom booking system for my family’s restaurant.',
-            link: 'https://turpan.vercel.app',
-            icon: '/icons/restaurant.png',
-          }, {
             title: 'MarketPulse',
             desc: 'Building a deep learning bot that provides trading signals and insights seamlessly on Discord.',
             link: 'https://github.com/ikemal12/marketpulse',
