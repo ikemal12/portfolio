@@ -42,6 +42,11 @@ export default function Home() {
         </h2>
         <div className="space-y-6">
           {[{
+            title: 'NES Emulator',
+            desc: 'Writing an emulator for the Nintendo Entertainment System in Rust and WebAssembly.',
+            link: 'https://github.com/ikemal12/nes-emu',
+            icon: '/icons/nesemu.png',
+          }, {
             title: 'Turpan Uyghur Restaurant',
             desc: 'Building a modern website with a custom booking system for my family’s restaurant.',
             link: 'https://turpan.vercel.app',
@@ -96,6 +101,11 @@ export default function Home() {
         </h2>
         <div className="space-y-6">
           {[{
+            title: 'Incoming AI Developer Undergraduate Placement at Pfizer',
+            date: 'September 2025 — September 2026',
+            desc: 'Leveraging AI and machine learning to enhance drug discovery processes.',
+            icon: '/icons/pfizer.jpg',
+          }, {
             title: 'Data Science Intern at Shell',
             date: 'June 2025 — September 2025',
             desc: 'Applying data science and ML techniques to real-world energy challenges.',
