@@ -50,13 +50,13 @@ export default function Home() {
             >
               <div className="space-y-4">
                 <h1 className="text-4xl md:text-5xl font-light text-slate-100 leading-relaxed">
-                  Hi, I'm <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300">Ilter</span>
+                  Hi, I&apos;m <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300">Ilter</span>
                 </h1>
                 <p className="text-2xl md:text-3xl font-light text-slate-300 leading-relaxed">
                   Software Developer
                 </p>
                 <p className="text-xl md:text-2xl font-light text-blue-200 italic leading-relaxed">
-                  Building intelligent systems, one algorithm at a time.
+                  Building intelligent systems, one line at a time.
                 </p>
               </div>
 
@@ -105,11 +105,11 @@ export default function Home() {
               transition={{ delay: 1.0, duration: 0.6 }}
             >
               <p className="text-lg text-slate-300 leading-relaxed">
-                I'm a Computer Science student at the University of Bath with a passion for 
+                I&apos;m a Computer Science student at the University of Bath with a passion for 
                 <span className="text-blue-300 font-medium"> machine learning</span> and 
                 <span className="text-purple-300 font-medium"> low-level systems programming</span>. 
-                When I'm not diving deep into neural networks or optimizing algorithms, 
-                you'll find me building emulators, experimenting with new technologies, 
+                When I&apos;m not diving deep into neural networks or optimizing algorithms, 
+                you&apos;ll find me building emulators, experimenting with new technologies, 
                 or contributing to open-source projects.
               </p>
             </motion.div>
