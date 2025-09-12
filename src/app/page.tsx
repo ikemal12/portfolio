@@ -107,10 +107,13 @@ export default function Home() {
               <p className="text-lg text-slate-300 leading-relaxed">
                 I&apos;m a Computer Science student at the University of Bath with a passion for 
                 <span className="text-blue-300 font-medium"> machine learning</span> and 
-                <span className="text-purple-300 font-medium"> low-level systems programming</span>. 
-                When I&apos;m not diving deep into neural networks or optimizing algorithms, 
-                you&apos;ll find me building emulators, experimenting with new technologies, 
-                or contributing to open-source projects.
+                <span className="text-purple-300 font-medium"> high-performance computing</span>. 
+                I recently spent my summer at Shell as a data science intern, where I worked on a 
+                federated learning framework to enable collaborative training within an edge computing system - 
+                an experience that has sparked my current interest in understanding the fundamentals of deep learning.
+                I have also had previous experience within student teams developing routing algorithms in C++ and 
+                computer vision models in Python. My coding projects vary greatly from a full-stack restaurant booking site
+                which I built with Next.js and Supabase, to a high-performance NES emulator written in Rust which I am currently working on.
               </p>
             </motion.div>
           </motion.div>
@@ -269,6 +272,9 @@ export default function Home() {
       </motion.section>
 
 
-    </main>
+    <footer className="w-full py-6 mt-12 text-center text-xs text-slate-500 bg-transparent">
+      <span>&copy; {new Date().getFullYear()} Made by Ilter Kemal</span>
+    </footer>
+  </main>
   );
 }
