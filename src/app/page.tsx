@@ -184,23 +184,35 @@ export default function Home() {
               img: '/previews/stacktrace-analyzer.png',
               link: 'https://github.com/ikemal12/stacktrace-analyzer',
             }, {
-              title: 'Encode AI Hack 2025',
-              desc: 'Smart AI assistant for personalised money tips and investment plans.',
-              tech: ['Python', 'Portia AI SDK'],
-              img: '/previews/financial-assistant.png',
-              link: 'https://github.com/ikemal12/encode-ai-hack-2025',
-            }, {
               title: 'CHIP-8',
               desc: 'Emulator for the CHIP-8 virtual machine, supporting 35+ games.',
               tech: ['C++', 'SDL2'],
               img: '/previews/emulator.png',
               link: 'https://github.com/ikemal12/CHIP-8',
             }, {
-              title: 'UberLand Go',
-              desc: 'Multi-modal routing webapp developed as part of the Uber Global Hackathon.',
-              tech: ['Flask', 'Google Maps', 'Tfl Unified API'],
-              img: '/previews/transport.png',
-              link: 'https://github.com/ikemal12/UberLand-Go',
+              title: 'Lockbox',
+              desc: 'Productivity device targeted at students.',
+              tech: ['C++', 'Arduino', 'I2C', 'RFID'],
+              img: '/previews/lockbox.png',
+              link: 'https://github.com/ikemal12/Arduino-Lockbox',
+            }, {
+              title: 'Retro Rush',
+              desc: 'A 2D top-down shooter game built using the Godot Engine..',
+              tech: ['GDScript', 'Game Development'],
+              img: '/previews/retro-rush.png',
+              link: 'https://github.com/ikemal12/Retro-Rush',
+            }, {
+              title: 'Flappy Bird AI Autoplayer',
+              desc: 'AI player for Flappy Bird using NEAT genetic algorithms.',
+              tech: ['Python', 'Pygame'],
+              img: '/previews/flappy-bird.png',
+              link: 'https://github.com/ikemal12/flappy-bird',
+            }, {
+              title: 'Next Step Placement Hub',
+              desc: 'Application tracker to help university students advance their career.',
+              tech: ['React', 'Firebase', 'Jest'],
+              img: '/previews/flappy-bird.png',
+              link: 'https://github.com/ikemal12/flappy-bird',
             }, {
               title: 'Pathfinding Visualizer',
               desc: 'Interactive pathfinding algorithm visualizer built with p5.js.',
@@ -271,6 +283,114 @@ export default function Home() {
         </motion.div>
       </motion.section>
 
+      <motion.section
+        id="hackathons"
+        className="max-w-6xl mx-auto px-6 pb-16"
+        initial="hidden"
+        animate="visible"
+        variants={fadeIn}
+        custom={3}
+      >
+        <motion.div
+          className="bg-gradient-to-br from-slate-900/70 to-slate-800/50 backdrop-blur-xl rounded-3xl border border-slate-700/50 p-10 shadow-2xl"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.8, duration: 0.8 }}
+        >
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.9, duration: 0.6 }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-purple-200 mb-4">
+              Hackathons
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full" />
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[{
+              title: 'OpenAI Open Model Hackathon',
+              desc: 'Privacy-first local gpt oss agent.',
+              tech: ['Python', 'LangChain', 'ChromaDB'],
+              img: '/previews/offline-research-assistant.png',
+              link: 'https://github.com/ikemal12/offline-research-assistant',
+            }, {
+              title: 'Encode AI Hack 2025',
+              desc: 'Smart AI assistant for personalised money tips and investment plans.',
+              tech: ['Python', 'Gemini'],
+              img: '/previews/financial-assistant.png',
+              link: 'https://github.com/ikemal12/encode-ai-hack-2025',
+            }, {
+              title: 'UberLand Go',
+              desc: 'Multi-modal routing webapp developed as part of the Uber Global Hackathon.',
+              tech: ['JavaScript','Flask', 'Google Maps'],
+              img: '/previews/transport.png',
+              link: 'https://github.com/ikemal12/UberLand-Go',
+            }].map((hackathon, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 2.0 + i * 0.1, duration: 0.8 }}
+                whileHover={{ y: -8, scale: 1.03 }}
+                className="group relative bg-gradient-to-br from-slate-800/60 to-slate-700/40 rounded-2xl border border-slate-600/50 overflow-hidden backdrop-blur-sm shadow-lg hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300"
+              >
+                <motion.a
+                  href={hackathon.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block h-full"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ type: 'spring', stiffness: 300 }}
+                >
+                  <div className="aspect-video relative overflow-hidden">
+                    <Image
+                      src={hackathon.img}
+                      alt={hackathon.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
+                  </div>
+                  
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-slate-100 group-hover:text-white mb-2 transition-colors">
+                      {hackathon.title}
+                    </h3>
+                    <p className="text-slate-300 text-sm leading-relaxed mb-4 group-hover:text-slate-200 transition-colors">
+                      {hackathon.desc}
+                    </p>
+                    
+                    <div className="flex flex-wrap gap-2">
+                      {hackathon.tech.map((tech, j) => (
+                        <span
+                          key={j}
+                          className="px-3 py-1 text-xs font-semibold bg-slate-700/60 text-slate-300 rounded-full border border-slate-600/50 group-hover:border-blue-400/50 group-hover:text-blue-200 transition-all duration-300"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  
+                  <div className="absolute top-4 right-4 w-8 h-8 bg-slate-800/80 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <motion.span
+                      className="text-slate-300 text-sm"
+                      whileHover={{ scale: 1.2, rotate: 45 }}
+                    >
+                      ↗
+                    </motion.span>
+                  </div>
+                </motion.a>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </motion.section>
 
     <footer className="w-full py-6 mt-12 text-center text-xs text-slate-500 bg-transparent">
       <span>&copy; {new Date().getFullYear()} Made by Ilter Kemal</span>
