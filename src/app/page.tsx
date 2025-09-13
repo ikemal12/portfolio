@@ -179,8 +179,8 @@ export default function Home() {
               link: 'https://github.com/ikemal12/marketpulse',
             }, {
               title: 'Stack Trace Analyzer',
-              desc: 'A smart error diagnosis and recommendation engine for Python developers.',
-              tech: ['LangChain', 'FastAPI', 'Ollama'],
+              desc: 'A smart error diagnosis tool for Python developers.',
+              tech: ['Python', 'FastAPI', 'Ollama'],
               img: '/previews/stacktrace-analyzer.png',
               link: 'https://github.com/ikemal12/stacktrace-analyzer',
             }, {
@@ -197,7 +197,7 @@ export default function Home() {
               link: 'https://github.com/ikemal12/Arduino-Lockbox',
             }, {
               title: 'Retro Rush',
-              desc: 'A 2D top-down shooter game built using the Godot Engine..',
+              desc: 'A 2D top-down shooter game built using the Godot Engine.',
               tech: ['GDScript', 'Game Development'],
               img: '/previews/retro-rush.png',
               link: 'https://github.com/ikemal12/Retro-Rush',
@@ -208,11 +208,11 @@ export default function Home() {
               img: '/previews/flappy-bird.png',
               link: 'https://github.com/ikemal12/flappy-bird',
             }, {
-              title: 'Next Step Placement Hub',
+              title: 'NextStep Placement Hub',
               desc: 'Application tracker to help university students advance their career.',
               tech: ['React', 'Firebase', 'Jest'],
-              img: '/previews/flappy-bird.png',
-              link: 'https://github.com/ikemal12/flappy-bird',
+              img: '/previews/placement-hub.png',
+              link: 'https://github.com/Placement-tool/NextStep-Placement-Hub',
             }, {
               title: 'Pathfinding Visualizer',
               desc: 'Interactive pathfinding algorithm visualizer built with p5.js.',
