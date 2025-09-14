@@ -121,6 +121,114 @@ export default function Home() {
       </motion.section>
 
       <motion.section
+        id="skills"
+        className="max-w-6xl mx-auto px-6 pb-12"
+        initial="hidden"
+        animate="visible"
+        variants={fadeIn}
+        custom={1}
+      >
+        <motion.div
+          className="bg-gradient-to-br from-slate-900/70 to-slate-800/50 backdrop-blur-xl rounded-3xl border border-slate-700/50 p-8 shadow-2xl"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2, duration: 0.8 }}
+        >
+          <motion.div
+            className="text-center mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.3, duration: 0.6 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-purple-200 mb-3">
+              Skills
+            </h2>
+            <div className="w-20 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full" />
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <motion.div
+              className="space-y-4"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 1.4, duration: 0.8 }}
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
+                <h3 className="text-lg font-semibold text-slate-100">Languages</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {['Python', 'C++', 'Java', 'JavaScript', 'TypeScript', 'SQL'].map((skill, i) => (
+                  <motion.span
+                    key={i}
+                    initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    transition={{ delay: 1.5 + i * 0.05, duration: 0.5, type: 'spring', stiffness: 200 }}
+                    whileHover={{ scale: 1.05, y: -2 }}
+                    className="px-3 py-1.5 text-xs font-medium bg-slate-800/60 text-slate-300 rounded-lg border border-slate-600/50 hover:border-blue-400/50 hover:bg-slate-700/80 hover:text-blue-200 transition-all duration-300 cursor-default backdrop-blur-sm"
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="space-y-4"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.5, duration: 0.8 }}
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }} />
+                <h3 className="text-lg font-semibold text-slate-100">Libraries & Frameworks</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {['React', 'Next.js', 'Express', 'PyTorch', 'TensorFlow', 'scikit-learn', 'OpenCV', 'Pandas', 'NumPy'].map((skill, i) => (
+                  <motion.span
+                    key={i}
+                    initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    transition={{ delay: 1.6 + i * 0.05, duration: 0.5, type: 'spring', stiffness: 200 }}
+                    whileHover={{ scale: 1.05, y: -2 }}
+                    className="px-3 py-1.5 text-xs font-medium bg-slate-800/60 text-slate-300 rounded-lg border border-slate-600/50 hover:border-purple-400/50 hover:bg-slate-700/80 hover:text-purple-200 transition-all duration-300 cursor-default backdrop-blur-sm"
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="space-y-4"
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 1.6, duration: 0.8 }}
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse" style={{ animationDelay: '1s' }} />
+                <h3 className="text-lg font-semibold text-slate-100">Backend & Infra</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {['Docker', 'Git', 'Kubernetes', 'AWS', 'Azure', 'FastAPI', 'Node.js', 'PostgreSQL', 'MongoDB', 'Firebase'].map((skill, i) => (
+                  <motion.span
+                    key={i}
+                    initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    transition={{ delay: 1.7 + i * 0.05, duration: 0.5, type: 'spring', stiffness: 200 }}
+                    whileHover={{ scale: 1.05, y: -2 }}
+                    className="px-3 py-1.5 text-xs font-medium bg-slate-800/60 text-slate-300 rounded-lg border border-slate-600/50 hover:border-cyan-400/50 hover:bg-slate-700/80 hover:text-cyan-200 transition-all duration-300 cursor-default backdrop-blur-sm"
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
+      </motion.section>
+
+      <motion.section
         id="projects"
         className="max-w-6xl mx-auto px-6 pb-16"
         initial="hidden"
